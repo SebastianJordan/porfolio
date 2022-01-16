@@ -16,8 +16,8 @@ jobs:
         node-version: [16.x]
     steps:
     - name: Checkout repository
-      uses: actions/checkout
+      uses: actions/checkout@main
     - name: Lint Markdown
-      uses: actionshub/markdownlint
+      uses: actionshub/markdownlint@main
     - run: npm ci
     - run: npm run lint
