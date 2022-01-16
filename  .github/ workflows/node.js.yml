@@ -1,0 +1,24 @@
+# This workflow will do test lint
+
+name: Porfolio CI
+
+on:
+  push:
+    branches: [ main, init ]
+  pull_request:
+    branches: [ main, init ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [17.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@init
+    - name: Lint Markdown
+      uses: actionshub/markdownlint@init
+    - run: npm ci
+    - run: npm run lint
