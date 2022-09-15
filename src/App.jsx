@@ -1,9 +1,9 @@
-import UnderCostruction from "./pages/under-construption/under-construction";
+import UnderConstruction from "./pages/under-construction/under-construction";
 
 function App() {
   return (
     <>
-      <UnderCostruction />
+      <UnderConstruction />
     </>
   );
 }
