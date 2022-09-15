@@ -9,6 +9,7 @@
     "lint": "eslint   src/**/*.jsx"
   },
   "dependencies": {
+    "globby": "^13.1.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

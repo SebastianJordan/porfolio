@@ -1,0 +1,78 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.slide-info {
+  padding-left: 16px;
+}
+
+.title,
+.description {
+  color: #443d5e;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 70px;
+}
+
+.description {
+  padding: 30px 0;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.group-point {
+  margin-top: 128px;
+  margin-bottom: 53px;
+}
+
+.tech-apply{
+  width: 100%;
+  height: 100%;
+}
+
+input,
+.email,
+.btnEmail {
+  height: 57px;
+  padding: 0px 16px;
+  font-size: 18px;
+  color: white;
+}
+
+.btnEmail {
+  background: #443d5e;
+  border-radius: 0px 26px 26px 0px;
+}
+
+input,
+.email {
+  background: rgba(229, 227, 236, 0.54);
+  border-radius: 26px 0px 0px 26px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.img-right {
+  max-width: 320px;
+  max-height: 200px;
+  padding-top: 60px;
+  padding-left: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .tech-apply {
+    display: none;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+  }
+}
