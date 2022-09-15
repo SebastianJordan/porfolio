@@ -26,5 +26,5 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: "Deploy to Vercel"
-        run: npx vercel --token ${VERCEL_TOKEN} --prod
+        run: npx vercel --token ${env.VERCEL_TOKEN} --prod
           
