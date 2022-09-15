@@ -1,16 +1,19 @@
 name: "Deploy to Vercel "
 
-on:
-  workflow_run:
-    workflows: ["test","lint"]
-    branches: [main]
-    types: 
-      - completed
-  push:
-    branches:
-      - main
+on: push
+  # workflow_run:
+  #   workflows: ["test","lint"]
+  #   branches: [main]
+  #   types: 
+  #     - completed
+  # push:
+  #   branches:
+  #     - main
 env:
   NODE_VERSION: 16
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
 jobs:
   vercel: 
     runs-on: ubuntu-latest
@@ -24,7 +27,4 @@ jobs:
         run: npm ci
       - name: "Deploy to Vercel"
         run: npx vercel --token ${VERCEL_TOKEN} --prod
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          
