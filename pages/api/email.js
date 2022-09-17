@@ -1,26 +1,19 @@
-import { SMTPClient } from "emailjs";
-
-export default function handler(req, res) {
-  const { email } = req.body;
-
-  const client = new SMTPClient({
-    user: process.env.mail,
-    password: process.env.password,
-    host: "smtp.gmail.com",
-    ssl: true,
-  });
-
+import db from "../../utils/db";
+export default async function handler(req, res) {
   try {
-    client.send({
-      text: `Porfolio Test`,
-      from: process.env.mail,
-      to: email,
-      subject: "testing emailjs",
-    });
+    const { email } = req.body;
+    const subscriptions = await db.collection("subscription").get();
+    const emails = subscriptions.docs.map((subs) => subs.data());
+    if (emails.filter((e) => e.email === email).length > 0) {
+      res.status(200).json({ status: "Exist" });
+    } else {
+      const { id } = await db.collection("subscription").add({
+        email,
+      });
+      res.status(200).json({ status: "save" });
+    }
   } catch (e) {
     res.status(400).end(JSON.stringify({ message: "Error" }));
     return;
   }
-
-  res.status(200).end(JSON.stringify({ message: "Send Mail" }));
 }
