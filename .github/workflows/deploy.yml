@@ -1,14 +1,14 @@
 name: "Deploy to Vercel "
 
-on: push
-  # workflow_run:
-  #   workflows: ["test","lint"]
-  #   branches: [main]
-  #   types: 
-  #     - completed
-  # push:
-  #   branches:
-  #     - main
+on:
+  workflow_run:
+    workflows: ["test","lint"]
+    branches: [main]
+    types: 
+      - completed
+  push:
+    branches:
+      - main
 env:
   NODE_VERSION: 16
 jobs:
