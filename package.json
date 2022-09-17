@@ -9,8 +9,7 @@
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
-    "test": "jest --coverage",
-    "publish":"vercel deploy --prod --token=$VERCEL_TOKEN"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "axios": "^0.27.2",

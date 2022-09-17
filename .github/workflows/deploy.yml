@@ -11,9 +11,6 @@ on: push
   #     - main
 env:
   NODE_VERSION: 16
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_TOKEN: ${{secrets.VERCEL_TOKEN}}
 jobs:
   vercel: 
     runs-on: ubuntu-latest
@@ -23,8 +20,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Install Dependencies
-        run: npm i
-      - name: Deploy Project Artifacts to Vercel
-        run: npm run publish
+      - uses: amondnet/vercel-action@v19
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: '--prod'
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} 
           
