@@ -5,6 +5,18 @@
 
 [![Lint](https://github.com/SebastianJordan/porfolio/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/SebastianJordan/porfolio/actions/workflows/lint.yml)
 
+[![Deploy to Vercel ](https://github.com/SebastianJordan/porfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/SebastianJordan/porfolio/actions/workflows/deploy.yml)
+
+
+[![Tests](https://github.com/SebastianJordan/porfolio/actions/workflows/test.yml/badge.svg)](https://github.com/SebastianJordan/porfolio/actions/workflows/test.yml)
+
+![Coverage lines](/coverage/badge-lines.svg)
+![Coverage functions](/coverage/badge-functions.svg)
+![Coverage branches](/coverage/badge-branches.svg)
+![Coverage statements](/coverage/badge-statements.svg)
+
+
+
 # Figma Design
 
 Link Figma
@@ -30,5 +42,3 @@ https://www.figma.com/file/yR88CwLXgwuge2vy59HC6y/Personal-Porfolio-(Community)?
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=sebastianjordan&show_icons=true&locale=en&layout=compact" alt="sebastianjordan" /></p>
 
-https://ogp.me
-https://www.linkedin.com/pulse/how-send-email-next-js-app-module-zeel-prajapati
