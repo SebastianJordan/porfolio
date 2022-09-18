@@ -1,34 +1,16 @@
 import Image from "next/image";
-import React, { useState } from "react";
 import styles from "../styles/UnderConstruction.module.css";
 import techApply from "../public/images/Main-Banner.svg";
 import logoSvg from "../public/images/logo.svg";
 import upPoint from "../public/images/up-group-point.svg";
-import axios from "axios";
+import { useEmail } from "../hooks/useEmail";
+
 export function UnderConstruction() {
-  const [textBtn, setTextBtn] = useState("Notify me");
-  const [emailInput, setEmail] = useState("");
-  const [sendingEmail, setStatusEmail] = useState(false);
-
-  const handleChange = (event) => {
-    setEmail({ value: event.target.value });
-  };
-
-  const sendEmail = (event) => {
-    event.preventDefault();
-    setTextBtn("Loading");
-    setStatusEmail(true);
-    axios
-      .post("api/email", { email: emailInput.value })
-      .then((res) => {
-        console.log(res.data);
-        setStatusEmail(false);
-        setTextBtn("Sended");
-      })
-      .catch((e) => {
-        setTextBtn("Error");
-      });
-  };
+  const [btn, emailInput, loading, onChangeForm, onSendEmail] = useEmail({
+    btn: "Notify me",
+    emailInput: "",
+    loading: false,
+  });
   return (
     <div className={styles.page}>
       <section className={styles.slideInfo}>
@@ -45,23 +27,24 @@ export function UnderConstruction() {
             <br />
             Should be back shortly, thanks you for you patience.
           </p>
-          <form onSubmit={sendEmail}>
+          <form onSubmit={onSendEmail}>
             <input
               required
-              disabled={sendingEmail}
+              disabled={loading}
               type="email"
               name="email"
               placeholder="Enter your email"
               className={styles.email}
-              value={emailInput.value}
-              onChange={handleChange}
+              value={emailInput || ""}
+              onChange={onChangeForm}
             ></input>
             <button
               className={styles.btnEmail}
-              onClick={sendEmail}
+              onClick={onSendEmail}
               type="submit"
+              name="btn"
             >
-              {textBtn}
+              {btn}
             </button>
           </form>
         </article>

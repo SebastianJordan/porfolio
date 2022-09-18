@@ -9,14 +9,17 @@
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
-    "test": "jest --coverage",
-    "publish":"vercel deploy --prod  --token=$VERCEL_TOKEN"
+    "test": "jest",
+    "test:coverage": "jest --coverage --coverageReporters='json-summary' ",
+    "test:badges": " npm run test:coverage && jest-coverage-badges",
+    "publish": "vercel deploy --prod  --token=$VERCEL_TOKEN"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "emailjs": "^4.0.1",
     "firebase": "^9.10.0",
     "firebase-admin": "^11.0.1",
+    "jest-coverage-badges": "^1.1.2",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
