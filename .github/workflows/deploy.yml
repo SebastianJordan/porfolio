@@ -3,7 +3,7 @@ name: "Deploy to Vercel "
 on:
   workflow_run:
     workflows: ["test","lint"]
-    branches: [main]
+    branches: [mainTest]
     types: 
       - completed
   push:

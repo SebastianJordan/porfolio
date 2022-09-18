@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders a heading 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <meta
+        charset="UTF-8"
+      />
+      <link
+        href="/src/images/icon.ico"
+        rel="icon"
+        type="image/svg+xml"
+      />
+      <meta
+        content="width=device-width, initial-scale=1.0"
+        name="viewport"
+      />
+      <meta
+        content="Hello, I am a system engineer with more than 5 years working on technology projects in the backend area (Java) such as frontend (Angular and React) and development of hybrid and native mobile applications (Ionic and ReactNative) applying an agile scrum methodology"
+        name="description"
+      />
+      <meta
+        content="Sebastian Jordan Frontend"
+        name="author"
+      />
+      <meta
+        content="Hello to personal website where I show my skills and resume"
+        property="og:title"
+      />
+      <meta
+        content="My personal portfolio where I show my technical skills at the fullstack level"
+        property="og:description"
+      />
+      <meta
+        content="src/images/icon.png"
+        property="og:image"
+      />
+      <meta
+        content="summary_large_image"
+        name="twitter:card"
+      />
+      <meta
+        content="@sjmPanama"
+        name="twitter:site"
+      />
+      <meta
+        content="Hello to personal website where I show my skills and resume"
+        name="twitter:title"
+      />
+      <meta
+        content="My personal portfolio where I show my technical skills at the fullstack level"
+        name="twitter:description"
+      />
+      <meta
+        content="src/images/icon.png"
+        name="twitter:image"
+      />
+      <title>
+        Hi, i'm Sebastián Jordán this is my portfolio
+      </title>
+      <script
+        async=""
+        src="https://www.googletagmanager.com/gtag/js?id=undefined"
+      />
+      <script>
+        
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'undefined', {
+              page_path: window.location.pathname,
+            });
+          
+      </script>
+    </div>
+  </body>,
+  "container": <div>
+    <meta
+      charset="UTF-8"
+    />
+    <link
+      href="/src/images/icon.ico"
+      rel="icon"
+      type="image/svg+xml"
+    />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+    <meta
+      content="Hello, I am a system engineer with more than 5 years working on technology projects in the backend area (Java) such as frontend (Angular and React) and development of hybrid and native mobile applications (Ionic and ReactNative) applying an agile scrum methodology"
+      name="description"
+    />
+    <meta
+      content="Sebastian Jordan Frontend"
+      name="author"
+    />
+    <meta
+      content="Hello to personal website where I show my skills and resume"
+      property="og:title"
+    />
+    <meta
+      content="My personal portfolio where I show my technical skills at the fullstack level"
+      property="og:description"
+    />
+    <meta
+      content="src/images/icon.png"
+      property="og:image"
+    />
+    <meta
+      content="summary_large_image"
+      name="twitter:card"
+    />
+    <meta
+      content="@sjmPanama"
+      name="twitter:site"
+    />
+    <meta
+      content="Hello to personal website where I show my skills and resume"
+      name="twitter:title"
+    />
+    <meta
+      content="My personal portfolio where I show my technical skills at the fullstack level"
+      name="twitter:description"
+    />
+    <meta
+      content="src/images/icon.png"
+      name="twitter:image"
+    />
+    <title>
+      Hi, i'm Sebastián Jordán this is my portfolio
+    </title>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=undefined"
+    />
+    <script>
+      
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'undefined', {
+              page_path: window.location.pathname,
+            });
+          
+    </script>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
