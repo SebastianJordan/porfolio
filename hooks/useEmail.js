@@ -20,7 +20,7 @@ export const useEmail = (initValue) => {
         setForm({ ...formEmail, btn: "Sended", loading: false });
       })
       .catch((e) => {
-        setForm({ ...formEmail, btn: "Error", loading: false});
+        setForm({ ...formEmail, btn: "Error", loading: false });
       });
   };
 

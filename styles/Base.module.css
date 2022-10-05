@@ -1,0 +1,13 @@
+.page {
+  background: url("../public/images/Main-Banner.svg") top right no-repeat;
+  background-size: 400px;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .page {
+    display: flex;
+    background: none;
+    flex-direction: column;
+  }
+}

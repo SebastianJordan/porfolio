@@ -1,0 +1,38 @@
+.box {
+  display: flex;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+}
+
+.item {
+  margin: 8px 16px;
+  font-size: 12px;
+}
+.item:hover {
+  border-bottom: 2px #7c28f2 solid;
+}
+
+.btn {
+  background-color: white;
+  color: var(--main-btn-color);
+  font-size: 12px;
+  border-radius: 26px;
+  padding: 0px 24px;
+  margin: 0px;
+}
+
+.logo {
+  padding: 8px 16px;
+  font-size: 18px;
+  color: white;
+  background-color: var(--main-p-color);
+  border-radius: 16px;
+  text-align: center;
+}

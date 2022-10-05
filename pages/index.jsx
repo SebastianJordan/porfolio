@@ -1,7 +1,9 @@
 import Head from "next/head";
 
 import { Header } from "../components/Header";
-import { UnderConstruction } from "../components/UnderConstruction";
+import { Navbar } from "../components/Navbar";
+import { Base } from "../components/Base";
+import { HeaderMain } from "../components/HeaderMain";
 
 export default function Home() {
   return (
@@ -9,9 +11,10 @@ export default function Home() {
       <Head>
         <Header />
       </Head>
-      <main>
-        <UnderConstruction />
-      </main>
+      <Base>
+        <Navbar showMenu={false} />
+        <HeaderMain />
+      </Base>
     </>
   );
 }

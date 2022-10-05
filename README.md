@@ -7,15 +7,12 @@
 
 [![Deploy to Vercel ](https://github.com/SebastianJordan/porfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/SebastianJordan/porfolio/actions/workflows/deploy.yml)
 
-
 [![Tests](https://github.com/SebastianJordan/porfolio/actions/workflows/test.yml/badge.svg)](https://github.com/SebastianJordan/porfolio/actions/workflows/test.yml)
 
-![Coverage lines](/coverage/badge-lines.svg)
-![Coverage functions](/coverage/badge-functions.svg)
-![Coverage branches](/coverage/badge-branches.svg)
-![Coverage statements](/coverage/badge-statements.svg)
-
-
+![Coverage lines](/badges/badge-lines.svg)
+![Coverage functions](/badges/badge-functions.svg)
+![Coverage branches](/badges/badge-branches.svg)
+![Coverage statements](/badges/badge-statements.svg)
 
 # Figma Design
 
@@ -41,4 +38,3 @@ https://www.figma.com/file/yR88CwLXgwuge2vy59HC6y/Personal-Porfolio-(Community)?
 </p>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=sebastianjordan&show_icons=true&locale=en&layout=compact" alt="sebastianjordan" /></p>
-
