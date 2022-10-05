@@ -7,8 +7,12 @@ export function HeaderMain() {
         title={["Hi", "I’m Sebastian", "Front-end developer"]}
         showBg={true}
       ></Title>
-        <a href="#" className="btn-basic mr-32">View resume</a>
-        <a href="#" className="btn-link">Github Projects </a>
+      <a href="#" className="btn-basic mr-32">
+        View resume
+      </a>
+      <a href="#" className="btn-link">
+        Github Projects{" "}
+      </a>
     </section>
   );
 }

@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { Navbar } from "../components/Navbar";
 import { Base } from "../components/Base";
-import { UnderConstruction } from "../components/UnderConstruction";
+import { HeaderMain } from "../components/HeaderMain";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <Base>
         <Navbar showMenu={false} />
-        <UnderConstruction />
+        <HeaderMain />
       </Base>
     </>
   );

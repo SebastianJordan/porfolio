@@ -11,7 +11,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "test": "jest",
     "test:coverage": "jest --coverage --coverageReporters='json-summary' ",
-    "test:badges": " npm run test:coverage && jest-coverage-badges",
+    "test:badges": "npm run test:coverage && jest-coverage-badges output './badges'",
     "publish": "vercel deploy --prod  --token=$VERCEL_TOKEN"
   },
   "dependencies": {

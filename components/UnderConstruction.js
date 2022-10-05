@@ -9,34 +9,34 @@ export function UnderConstruction() {
     loading: false,
   });
   return (
-      <section className={styles.slideInfo}>
-          <Title title="Under Construction" showBg={true}>
-              <p>
-              My website is currently undergoing .
-              <br />
-              Should be back shortly, thanks you for you patience.
-            </p>
-          </Title>
-          <form onSubmit={onSendEmail}>
-            <input
-              required
-              disabled={loading}
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              className={styles.email}
-              value={emailInput || ""}
-              onChange={onChangeForm}
-            ></input>
-            <button
-              className={styles.btnEmail}
-              onClick={onSendEmail}
-              type="submit"
-              name="btn"
-            >
-              {btn}
-            </button>
-          </form>
-        </section>
+    <section className={styles.slideInfo}>
+      <Title title={["Under Construction"]} showBg={true}>
+        <p>
+          My website is currently undergoing .
+          <br />
+          Should be back shortly, thanks you for you patience.
+        </p>
+      </Title>
+      <form onSubmit={onSendEmail}>
+        <input
+          required
+          disabled={loading}
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          className={styles.email}
+          value={emailInput || ""}
+          onChange={onChangeForm}
+        ></input>
+        <button
+          className={styles.btnEmail}
+          onClick={onSendEmail}
+          type="submit"
+          name="btn"
+        >
+          {btn}
+        </button>
+      </form>
+    </section>
   );
 }
