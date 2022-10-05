@@ -3,4 +3,5 @@
 @tailwind utilities;
 :root {
   --main-p-color: #443d5e;
+  --main-btn-color: #7624ea;
 }
