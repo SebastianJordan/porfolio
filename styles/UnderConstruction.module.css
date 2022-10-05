@@ -1,28 +1,8 @@
-.page {
-  display: flex;
-  justify-content: space-between;
-}
-
 .slideInfo {
   padding-left: 32px;
 }
 
-.title,
-.description {
-  color: var(--main-p-color);
-  font-weight: 700;
-}
 
-.title {
-  font-size: 70px;
-}
-
-.description {
-  padding: 30px 0;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 30px;
-}
 
 .groupPoint {
   margin-top: 54px;
