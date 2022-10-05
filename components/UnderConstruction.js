@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "../styles/UnderConstruction.module.css";
 import { useEmail } from "../hooks/useEmail";
 import Title from "./Title";
@@ -10,10 +9,8 @@ export function UnderConstruction() {
     loading: false,
   });
   return (
-    <>
       <section className={styles.slideInfo}>
-        <article>
-          <Title title="Under Construction">
+          <Title title="Under Construction" showBg={true}>
               <p>
               My website is currently undergoing .
               <br />
@@ -40,8 +37,6 @@ export function UnderConstruction() {
               {btn}
             </button>
           </form>
-        </article>
-      </section>
-    </>
+        </section>
   );
 }
