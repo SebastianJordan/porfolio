@@ -14,3 +14,19 @@
   font-size: 18px;
   line-height: 30px;
 }
+
+.groupPoint {
+  margin-top: 54px;
+  margin-bottom: 54px;
+  background: url("../public/images/up-group-point.svg") top left no-repeat;
+  background-size: 150px;
+  height: 200px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 50px !important;
+  }
+}
+
