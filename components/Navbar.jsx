@@ -1,5 +1,6 @@
-import styles from "../styles/Navbar.module.css";
-
+import React from 'react';
+import styles from '../styles/Navbar.module.css';
+import PropTypes from 'prop-types';
 export function Navbar({ showMenu }) {
   return (
     <nav className={styles.box}>
@@ -17,3 +18,7 @@ export function Navbar({ showMenu }) {
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  showMenu: PropTypes.bool,
+};

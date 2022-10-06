@@ -1,8 +1,8 @@
-name: "Deploy to Vercel "
+name: 'Deploy to Vercel '
 
 on:
   workflow_run:
-    workflows: ["test", "lint"]
+    workflows: ['test', 'lint']
     branches: [mainTest]
     types:
       - completed
@@ -14,7 +14,7 @@ env:
 jobs:
   vercel:
     runs-on: ubuntu-latest
-    name: "Deploy porfolio"
+    name: 'Deploy porfolio'
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -23,6 +23,6 @@ jobs:
       - uses: amondnet/vercel-action@v19
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: "--prod"
+          vercel-args: '--prod'
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}

@@ -1,5 +1,5 @@
 .page {
-  background: url("../public/images/Main-Banner.svg") top right no-repeat;
+  background: url('../public/images/Main-Banner.svg') top right no-repeat;
   background-size: 400px;
   height: 100vh;
 }

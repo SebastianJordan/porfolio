@@ -18,7 +18,7 @@
 .groupPoint {
   margin-top: 54px;
   margin-bottom: 54px;
-  background: url("../public/images/up-group-point.svg") top left no-repeat;
+  background: url('../public/images/up-group-point.svg') top left no-repeat;
   background-size: 150px;
   height: 200px;
 }

@@ -1,16 +1,16 @@
-import styles from "../styles/UnderConstruction.module.css";
-import { useEmail } from "../hooks/useEmail";
-import Title from "./Title";
-
+import React from 'react';
+import styles from '../styles/UnderConstruction.module.css';
+import { useEmail } from '../hooks/useEmail';
+import Title from './Title';
 export function UnderConstruction() {
   const [btn, emailInput, loading, onChangeForm, onSendEmail] = useEmail({
-    btn: "Notify me",
-    emailInput: "",
+    btn: 'Notify me',
+    emailInput: '',
     loading: false,
   });
   return (
     <section className={styles.slideInfo}>
-      <Title title={["Under Construction"]} showBg={true}>
+      <Title title={['Under Construction']} showBg={true}>
         <p>
           My website is currently undergoing .
           <br />
@@ -25,7 +25,7 @@ export function UnderConstruction() {
           name="email"
           placeholder="Enter your email"
           className={styles.email}
-          value={emailInput || ""}
+          value={emailInput || ''}
           onChange={onChangeForm}
         ></input>
         <button
